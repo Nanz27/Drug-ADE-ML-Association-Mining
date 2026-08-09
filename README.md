@@ -136,6 +136,57 @@ Examples of strong associations observed:
 
 These are **statistical associations in the review data, not evidence of clinical causality**.
 
+##Final Dataset
+
+The orginal UCI Drug Review Dataset contains seven attributes:
+
+- `uniqueID`
+- `drugName`
+- `condition`
+- `review`
+- `rating`
+- `date`
+- `usefulCount`
+
+The original patient reviews were processed through the proposed
+Hybrid Drug–ADE Extraction Pipeline. The pipeline combines
+transformer-based ADE extraction with rule-based NLP processing,
+including ADE normalization, negation detection, severity detection,
+frequency detection, and confidence aggregation.
+
+Context-aware sentiment analysis was subsequently applied to the
+reviews.
+
+This process generated an enhanced silver-labelled dataset containing
+the original attributes together with structured Drug–ADE and
+sentiment features.
+
+### Final Dataset Features
+
+| Feature | Description |
+|---|---|
+| `uniqueID` | Original review identifier |
+| `drugName` | Drug name |
+| `condition` | Medical condition |
+| `review` | Patient review |
+| `rating` | Original patient rating |
+| `date` | Review date |
+| `usefulCount` | Original usefulness count |
+| `ade_entities` | Extracted ADE entities |
+| `ade_count` | Number of extracted ADEs |
+| `silver_label` | Generated silver ADE label |
+| `max_confidence` | Maximum ADE extraction confidence |
+| `max_severity` | Maximum detected severity |
+| `max_frequency` | Maximum detected frequency |
+| `sentiment` | Review sentiment |
+| `sentiment_score` | Sentiment score |
+
+The complete processed dataset is not included in this repository
+because of its large file size. The repository instead contains the
+processing code and rule-based dictionaries used to generate the
+enhanced dataset.
+
+
 ## Architecture
 
 ```text
