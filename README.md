@@ -1,717 +1,448 @@
-# Drug Insight Engine
+# Drug–ADE Insight Engine
 
-Build a One-Page Web Application: “Drug–ADE Insight Engine”
+A modern research prototype for discovering potential **Adverse Drug Events (ADEs)** and **Drug–ADE associations** from patient-generated drug reviews.
 
-Create a polished, modern, responsive one-page research prototype called:
+> **Research Prototype · Hybrid NLP · Sentiment Analysis · Machine Learning · Association Rule Mining**
 
-Drug–ADE Insight Engine
+---
 
-This is a conceptual pharmacovigilance research application designed for a university research presentation. It demonstrates how patient-generated drug reviews could be processed through a hybrid NLP pipeline, an XGBoost prediction model, and association rule mining to produce interpretable Drug–ADE insights.
+## Overview
 
-The application should feel like a real future research product, not a generic chatbot and not a hospital-management dashboard.
+The **Drug–ADE Insight Engine** demonstrates a conceptual end-to-end pharmacovigilance workflow that transforms unstructured patient drug reviews into structured Drug–ADE insights.
 
-1. CORE CONCEPT
+The system combines transformer-based NLP, rule-based processing, sentiment analysis, machine learning, and association rule mining:
 
-The application demonstrates this end-to-end workflow:
-
-Patient Review
-↓
-Hybrid NLP Analysis
-↓
-ADE + Context Extraction
-↓
-TF-IDF + Hybrid NLP Features + Sentiment
-↓
-XGBoost Prediction
-↓
-ADE Prediction
-↓
-Association Rule Mining
-↓
-Drug–ADE Relationship Insights
-
-The technical pipeline should be visually understandable, but the main focus must remain on the results presented to the user.
-
-2. VISUAL DESIGN
-
-Use a clean, modern academic health-tech aesthetic.
-
-Design language
-
-White / very light background
-
-Navy, blue, and teal as primary accent colors
-
-Dark navy text
-
-Soft gray borders
-
-Rounded cards
-
-Subtle shadows
-
-Clean typography
-
-Generous whitespace
-
-Small, meaningful icons
-
-Minimal charts
-
-Professional data visualization
-
-Responsive design
-
-Desktop-first but mobile-friendly
-
-The design should resemble a polished research technology prototype, rather than a commercial medical portal.
-
-Avoid
-
-Generic chatbot UI
-
-Chat bubbles
-
-Hospital-management-system styling
-
-Excessive gradients
-
-Excessive animations
-
-Large decorative illustrations
-
-Dense dashboards
-
-Too many metrics
-
-Unnecessary technical jargon
-
-Overly complicated navigation
-
-3. PAGE STRUCTURE
-
-Everything must fit naturally into one scrollable page.
-
-Use a simple structure:
-
-Header / Hero
-
-Review Input
-
-Review Analysis
-
-ADE Prediction
-
-Drug–ADE Relationship Insights
-
-Analysis Summary
-
-Research Pipeline Overview
-
-Disclaimer Footer
-
-Do not create multiple pages.
-
-4. HEADER / HERO
-
-At the top, create a compact professional header.
-
-Brand
-
-Drug–ADE Insight Engine
-
-Small subtitle:
-
-Hybrid NLP-powered Drug–Adverse Event Analysis
-
-Add a short description:
-
-Analyze patient-generated medication reviews to identify possible adverse drug events, predict ADE-related reviews, and explore Drug–ADE patterns discovered from review data.
-
-Include a small visual indicator such as:
-
-Research Prototype
-
-This should clearly communicate that this is an academic prototype.
-
-5. USER INPUT SECTION
-
-Create a prominent card titled:
-
-Analyze a Patient Review
-
-Include two fields.
-
-Drug Name
-
-Label:
-
-Drug Name
-
-Placeholder:
-
-Enter drug name
-
-Patient Review
-
-Label:
-
-Patient Review
-
-Use a larger textarea.
-
-Placeholder:
-
-Enter a patient review about the medication...
-
-Below the textarea, include a small secondary button:
-
-Try Example
-
-When clicked, populate the fields with a realistic example review.
-
-Example:
-
-Drug Name:
-Sertraline
-
-Review:
-I started taking sertraline a few weeks ago. It has helped with my mood, but I occasionally feel nauseous and dizzy, especially after taking my morning dose.
-
-Primary CTA:
-
-Analyze Review
-
-Use a strong navy/blue button.
-
-The button should trigger the demo analysis flow.
-
-6. REVIEW ANALYSIS
-
-After analysis, display a section titled:
-
-Review Analysis
-
-Add a subtle status indicator:
-
-✓ Analysis completed
-
-Do NOT expose every internal NLP step. Only show the important user-facing results.
-
-Create a clean grid of result cards.
-
-Detected ADEs
-
-Show:
-
-Nausea
-Dizziness
-
-Use pill/tag components.
-
-ADE Count
-
-2
-
-Severity
-
-Moderate
-
-Frequency
-
-Occasional
-
-Sentiment
-
-Negative
-
-Confidence
-
-91%
-
-For confidence, use a compact horizontal progress indicator.
-
-Each result should have a small relevant icon where appropriate.
-
-7. NLP PROCESSING INDICATOR
-
-Below or beside the Review Analysis results, include a small expandable or compact technical information area titled:
-
-Hybrid NLP Analysis
-
-Keep it visually secondary.
-
-Show the conceptual stages as small steps:
-
-ADE Extraction → Normalization → Negation → Severity → Frequency → Sentiment
-
-Use subtle connected lines or arrows.
-
-Do not overwhelm the user with implementation details.
-
-This section exists primarily to demonstrate the research methodology during a presentation.
-
-8. ADE PREDICTION SECTION
-
-Create the main prediction card titled:
-
-ADE Prediction
-
-Add a small model badge:
-
-XGBoost
-
-Below it show:
-
-Feature Set
-
-TF-IDF + Hybrid NLP Features + Sentiment
-
-Then create a prominent prediction result.
-
-Prediction
-
-ADE-related
-
-Confidence
-
-87%
-
-Display the confidence using a large but clean probability/progress visualization.
-
-For example:
-
-87%
-
-with a horizontal confidence bar.
-
-Add a small explanatory line:
-
-The model predicts that this review is likely to contain an adverse drug event.
-
-IMPORTANT:
-
-The interface must distinguish between demo/mock output and an actual connected machine-learning model.
-
-Include a subtle label such as:
-
-Demo prediction — connect trained XGBoost model for live inference
-
-The architecture must be prepared so that a real trained:
-
-XGBoost model
-
-TF-IDF vectorizer
-
-preprocessing pipeline
-
-feature transformation pipeline
-
-can be connected later.
-
-Do NOT present hard-coded demo predictions as if they were generated by a real trained model.
-
-9. DRUG–ADE RELATIONSHIP INSIGHTS
-
-Create a visually distinct section titled:
-
-Drug–ADE Relationship Insights
-
-Add a short explanation:
-
-Association rule mining can identify recurring relationships between medications and adverse drug events across the available review dataset.
-
-Clearly label this as:
-
-Association Rule Mining
-
-Then show relevant discovered relationships.
-
-Example demo relationship:
-
-Sertraline → Anxiety
-
-Display:
-
-Support: 16.3%
-Confidence: 59.5%
-Lift: 3.66×
-
-Use a clean horizontal relationship card:
-
-Sertraline → Anxiety
-
-with the metrics underneath.
-
-10. ASSOCIATION VISUALIZATION
-
-Add a small, minimal visualization titled:
-
-Strongest Drug–ADE Associations
-
-Use a clean horizontal bar chart or node-link style visualization.
-
-Keep it simple.
-
-Example:
-
-Sertraline → Anxiety
-Sertraline → Nausea
-Fluoxetine → Headache
-
-However:
-
-IMPORTANT DATA BEHAVIOR
-
-These are demo relationships only.
-
-Do NOT hard-code the example ARM results as a permanent knowledge base.
-
-The architecture should allow future association-rule results to be loaded dynamically from a dataset or backend.
-
-The visualization must automatically update when new rules are supplied.
-
-The application should support fields such as:
-
-Drug
-
-ADE
-
-Support
-
-Confidence
-
-Lift
-
-If no relevant association exists for the entered drug, display:
-
-No strong Drug–ADE relationship identified in the available data.
-
-Do NOT invent relationships.
-
-11. ANALYSIS SUMMARY
-
-At the bottom of the results area, create a concise card titled:
-
-Analysis Summary
-
-Present the key findings in an easy-to-scan format.
-
-Example:
-
-Drug
-Sertraline
-
-Detected ADEs
-Nausea, Dizziness
-
-Sentiment
-Negative
-
-ADE Prediction
-ADE-related
-
-Confidence
-87%
-
-Related Drug–ADE Patterns
-3 identified
-
-Use a clean two-column layout on desktop and stack on mobile.
-
-12. ANALYZE ANOTHER REVIEW
-
-At the end of the results section, add a prominent secondary CTA:
-
-Analyze Another Review
-
-When clicked:
-
-Clear the current results
-
-Reset the input fields
-
-Return focus to the review input area
-
-Keep the interaction simple and smooth.
-
-13. RESEARCH PIPELINE OVERVIEW
-
-Near the bottom of the page, add a compact section titled:
-
-How the Engine Works
-
-Do not make this the main focus.
-
-Use a horizontal workflow on desktop and a vertical workflow on mobile:
-
-PATIENT REVIEW
-↓
-HYBRID NLP
-↓
-ADE + CONTEXT EXTRACTION
-↓
-TF-IDF + HYBRID FEATURES + SENTIMENT
-↓
-XGBOOST
-↓
-ADE PREDICTION
-↓
-ASSOCIATION RULE MINING
-↓
-DRUG–ADE INSIGHTS
-
-Use simple icons and thin connecting arrows.
-
-Keep the labels concise.
-
-Add a small caption:
-
-The prototype represents a future end-to-end pharmacovigilance analysis workflow.
-
-14. DEMO / MOCK DATA BEHAVIOR
-
-The application should be fully interactive even before the real ML backend is connected.
-
-For demonstration purposes:
-
-Provide a Try Example button.
-
-Populate realistic example input.
-
-Show example analysis results after clicking Analyze Review.
-
-Clearly label these outputs as Demo Results or Prototype Results where appropriate.
-
-Do NOT claim that the prototype is currently running a trained XGBoost model unless the model is actually connected.
-
-Structure the frontend so that the demo inference logic can later be replaced with an API call.
-
-For example, conceptually structure the application around:
-
-POST /analyze
-
-with future response fields such as:
-
-drug
-
-detected_ades
-
-ade_count
-
-severity
-
-frequency
-
-sentiment
-
-sentiment_confidence
-
-prediction
-
-prediction_confidence
-
-related_rules
-
-Do not require the backend to exist now.
-
-15. FUTURE MODEL INTEGRATION
-
-Design the frontend architecture so these components can later be connected:
-
-NLP Pipeline
-
-Transformer-based ADE extraction
-
-ADE normalization
-
-Negation detection
-
-Severity detection
-
-Frequency detection
-
-Confidence aggregation
-
-Context-aware sentiment analysis
-
+```text
+Patient Drug Review
+        ↓
+Hybrid Drug–ADE NLP Analysis
+        ↓
+Structured Drug–ADE Features
+        ↓
+Context-Aware Sentiment Analysis
+        ↓
 Feature Engineering
+        ↓
+SVM Prediction
+        ↓
+Drug–ADE Association Mining
+        ↓
+Interpretable Drug–ADE Insights
+```
 
-TF-IDF features
+The application is designed as an **academic research prototype** demonstrating how patient-generated medication reviews could be analyzed to support pharmacovigilance research.
 
-Hybrid Drug–ADE features
+---
 
-Sentiment features
+## Key Features
 
-Prediction
+### 1. Patient Review Input
 
-XGBoost
+Users can provide:
 
-The XGBoost model should be clearly identified as the primary ADE classification model.
+* **Drug Name**
+* **Patient Review**
 
-Association Mining
+The interface also provides a **Try Example** option for quickly demonstrating the system.
 
-Future dynamic results from:
+---
 
-Apriori
+### 2. Hybrid Drug–ADE Extraction
 
-FP-Growth
+The Drug–ADE extraction stage combines a transformer-based model with rule-based NLP processing.
 
-Other association-rule mining methods
+The transformer component uses:
 
-The UI should not depend on a fixed list of drugs or ADEs.
+**SpanBERT-large fine-tuned on ADE Corpus v2**
 
-16. IMPORTANT RESEARCH ACCURACY RULES
+Model:
 
-This is a research prototype, so avoid misleading medical claims.
+`abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2`
 
-Do NOT say:
+The extracted entities are further processed using rule-based techniques including:
 
-"This drug causes..."
+* ADE normalization
+* Negation detection
+* Severity detection
+* Frequency detection
+* Confidence aggregation
+* Silver-label generation
 
-"The patient has..."
+This produces structured Drug–ADE information from unstructured patient reviews.
 
-"This confirms an adverse event."
+---
 
-"This proves causality."
+### 3. Context-Aware Sentiment Analysis
 
-Instead use language such as:
+The system uses **Twitter-RoBERTa** for sentiment analysis.
 
-"Detected possible ADE"
+Model:
 
-"ADE-related prediction"
+`cardiffnlp/twitter-roberta-base-sentiment-latest`
 
-"Association identified in review data"
+The model classifies the patient review into:
 
-"Pattern observed in available data"
+* Positive
+* Neutral
+* Negative
 
-"Possible relationship"
+and provides a corresponding sentiment score.
 
-Association rule mining must be presented as pattern discovery, not causal inference.
+The sentiment information is incorporated into the downstream feature representation.
 
-17. RESPONSIVE DESIGN
+---
 
-Desktop:
+### 4. SVM-Based ADE Prediction
 
-Centered content container
+The machine-learning stage uses a **Support Vector Machine (SVM)** classifier to predict whether a review is **ADE-related**.
 
-Maximum width around 1100–1200px
+The prediction features combine information generated throughout the NLP pipeline:
 
-Comfortable spacing
+```text
+TF-IDF Features
+       +
+Hybrid Drug–ADE Features
+       +
+Sentiment Features
+       ↓
+    SVM Model
+       ↓
+ADE Prediction + Confidence
+```
 
-Two-column layouts where appropriate
+The web interface displays the predicted ADE-related status together with the model confidence.
 
-Tablet:
+---
 
-Reduce column widths
+### 5. Drug–ADE Association Rule Mining
 
-Preserve readability
+Following the prediction stage, the system identifies recurring Drug–ADE relationships using **Association Rule Mining (ARM)**.
 
-Mobile:
+The resulting rules can contain:
 
-Stack cards vertically
+* Drug
+* ADE
+* Support
+* Confidence
+* Lift
+
+These measures help identify frequently occurring Drug–ADE patterns within the patient review dataset.
+
+> Association rules represent statistical patterns in the observed review data and do not establish a causal relationship between a drug and an adverse event.
+
+---
+
+## Hybrid NLP Pipeline
+
+The core Drug–ADE processing workflow is:
+
+```text
+Patient Review
+      ↓
+Text Preprocessing
+      ↓
+SpanBERT-ADE
+      ↓
+Drug & ADE Entity Extraction
+      ↓
+Rule-Based NLP Processing
+      ├── ADE Normalization
+      ├── Negation Detection
+      ├── Severity Detection
+      ├── Frequency Detection
+      └── Confidence Aggregation
+      ↓
+Structured Drug–ADE Features
+      ↓
+Silver Label
+```
+
+The resulting features form the basis for subsequent sentiment analysis and machine-learning stages.
+
+---
+
+## Feature Engineering
+
+The final feature representation combines multiple sources of information:
+
+### Original Review Features
+
+* Drug name
+* Condition
+* Review text
+* Rating
+* Date
+* Useful count
+
+### Drug–ADE Features
+
+* ADE entities
+* ADE count
+* Silver label
+* Maximum confidence
+* Maximum severity
+* Maximum frequency
+
+### Sentiment Features
+
+* Sentiment
+* Sentiment score
+
+These features are combined to construct the input representation for the machine-learning stage.
+
+---
+
+## Final Enhanced Dataset
+
+The original UCI Drug Review dataset contains:
+
+```text
+uniqueID
+drugName
+condition
+review
+rating
+date
+usefulCount
+```
+
+The proposed pipeline enriches these original attributes with structured Drug–ADE and sentiment features.
+
+The final enhanced dataset contains:
+
+```text
+uniqueID
+drugName
+condition
+review
+rating
+date
+usefulCount
+ade_entities
+ade_count
+silver_label
+max_confidence
+max_severity
+max_frequency
+sentiment
+sentiment_score
+```
+
+This enhanced dataset is used for subsequent **machine-learning prediction and association rule mining**.
+
+Due to the large size of the processed dataset, the complete dataset is not included directly in this web application repository.
+
+---
+
+## Research Workflow
+
+```text
+                 PATIENT REVIEW
+                       │
+                       ▼
+             ┌──────────────────┐
+             │  Hybrid NLP      │
+             │  Drug–ADE        │
+             │  Extraction      │
+             └────────┬─────────┘
+                      │
+                      ▼
+             Drug–ADE Features
+                      │
+          ┌───────────┴───────────┐
+          ▼                       ▼
+   Sentiment Analysis       Silver Label
+   Twitter-RoBERTa               │
+          │                      │
+          └──────────┬───────────┘
+                     ▼
+              Feature Engineering
+                     │
+                     ▼
+                   SVM
+                     │
+                     ▼
+              ADE Prediction
+                     │
+                     ▼
+          Association Rule Mining
+                     │
+                     ▼
+           Drug–ADE Relationships
+```
 
-Full-width input fields
+---
 
-Full-width buttons
+## Web Application
 
-Horizontal workflow becomes vertical
+The webpage provides an interactive interface for demonstrating the research workflow.
 
-Charts remain readable
+The main sections include:
 
-No horizontal page scrolling
+1. **Research Prototype Introduction**
+2. **Patient Review Input**
+3. **Review Analysis**
+4. **Hybrid NLP Analysis**
+5. **ADE Prediction**
+6. **Drug–ADE Relationship Insights**
+7. **Analysis Summary**
+8. **Research Pipeline**
+9. **Research Disclaimer**
+
+The interface is designed with a clean academic health-tech aesthetic to make the analytical results understandable to both technical and non-technical audiences.
+
+---
+
+## Prototype Mode
+
+The current webpage serves as a **research demonstration interface**.
+
+Users can:
+
+1. Enter a drug name.
+2. Enter a patient review.
+3. Analyze the review.
+4. View extracted ADE information.
+5. View sentiment results.
+6. View the SVM-based ADE prediction.
+7. Explore Drug–ADE relationship insights.
+
+The interface is structured so that the frontend can later be connected directly to the complete NLP and machine-learning backend.
+
+---
 
-18. MICRO-INTERACTIONS
+## Technologies & Models
 
-Keep animations subtle.
+### Natural Language Processing
 
-Allowed:
+* Python
+* Transformer-based NLP
+* Rule-based NLP
+* SpanBERT
 
-Smooth section reveal after analysis
+### Drug–ADE Extraction
 
-Button loading state
+**Model:** `abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2`
 
-Progress animation for confidence
+Purpose:
 
-Small hover effects
+> Drug and ADE entity/span extraction from patient reviews.
 
-Smooth scrolling to results
+### Sentiment Analysis
 
-Avoid:
+**Model:** `cardiffnlp/twitter-roberta-base-sentiment-latest`
 
-Excessive motion
+Purpose:
 
-Spinning loaders everywhere
+> Context-aware sentiment classification of patient reviews.
 
-Animated backgrounds
+### Machine Learning
 
-Chat-style typing animations
+**Model:** Support Vector Machine (SVM)
 
-When the user clicks Analyze Review, show a brief loading state:
+Purpose:
 
-Analyzing review...
+> Predict whether a patient review is ADE-related.
 
-Then reveal the results.
+### Feature Engineering
 
-19. ACCESSIBILITY
+* TF-IDF
+* Drug–ADE features
+* Sentiment features
+* Review metadata
 
-Use:
+### Association Rule Mining
 
-High text contrast
+The system is designed to identify recurring Drug–ADE relationships using association-rule-mining techniques such as:
 
-Clearly associated labels
+* Apriori
+* FP-Growth
 
-Large enough click targets
+---
 
-Keyboard-friendly controls
+## Project Structure
 
-Visible focus states
+```text
+Drug-ADE-Insight-Engine/
+│
+├── website/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── notebooks/
+│
+├── src/
+│   ├── preprocessing/
+│   ├── ade_extraction/
+│   ├── sentiment/
+│   ├── feature_engineering/
+│   ├── machine_learning/
+│   └── association_mining/
+│
+├── data/
+│   ├── README.md
+│   └── dictionaries/
+│       ├── ade_lexicon.json
+│       ├── normalization_mapping.json
+│       ├── negation_words.json
+│       ├── severity_terms.json
+│       └── frequency_terms.json
+│
+├── results/
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-Semantic HTML
+---
 
-Accessible chart labels
+## Research Purpose
 
-Do not rely only on color to communicate prediction status.
+The purpose of the **Drug–ADE Insight Engine** is to demonstrate how patient-generated medication reviews can be transformed into structured pharmacovigilance information using a combination of:
 
-20. FOOTER
+**Hybrid NLP + Sentiment Analysis + Feature Engineering + SVM + Association Rule Mining**
 
-Add a small, subtle footer:
+The prototype demonstrates a potential future workflow for discovering and analyzing Drug–ADE patterns from large-scale patient-generated review data.
 
-Research prototype based on patient-generated review data. Predictions and associations indicate patterns in the data and do not establish medical causality or provide medical advice.
+---
 
-Also include:
+## Limitations
 
-Drug–ADE Insight Engine · Research Prototype
+This system is a **research prototype** and should not be considered a clinical decision-support system.
 
-21. OVERALL USER EXPERIENCE
+The predictions and extracted ADEs:
 
-The entire page should communicate one simple idea:
+* Do not establish medical causality.
+* Do not constitute a medical diagnosis.
+* Do not replace professional medical judgment.
+* Represent patterns identified from patient-generated review data.
 
-I enter a drug and patient review → the engine analyzes the review → identifies possible adverse events → evaluates sentiment and context → predicts whether the review is ADE-related using XGBoost → and shows broader Drug–ADE patterns discovered from review data.
+Similarly, association rules identify statistical relationships in the analyzed data but **do not prove that a drug caused an adverse event**.
 
-The application should feel:
+---
 
-Research-focused + modern + interpretable + lightweight + credible
+## Disclaimer
 
-It should be something I can confidently demonstrate during a university research presentation.
+> **Drug–ADE Insight Engine is a research prototype based on patient-generated drug reviews. Detected ADEs, predictions, sentiments, and association rules represent patterns identified from the available data and should not be interpreted as confirmed medical causality, diagnosis, or medical advice.**
 
-Prioritize clarity over complexity.
+---
 
-The most important content on the page should be:
+## Authors
 
-Patient Review Input
+**Nanzeeba Ayman, Nadia Mahzabin, Umme Hafsa Mazumder**
+Department of Computer Science, Asian University for Women
 
-Detected ADEs
+---
 
-Sentiment / Context
+## Project Status
 
-XGBoost ADE Prediction
+**Research Prototype**
 
-Drug–ADE Relationship Insights
+The web application demonstrates the proposed end-to-end Drug–ADE analysis workflow and provides an interactive interface for presenting the research findings.
 
-Concise Analysis Summary
-
-Everything else should remain visually secondary.
 
 This project was built with [Lovable](https://lovable.dev).
 
