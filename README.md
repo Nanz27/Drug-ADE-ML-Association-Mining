@@ -163,9 +163,9 @@ Feature Sets A / B / C
         │
         ▼
 ML Models
-┌──────────────────────────────────┐
+┌──────────────────────────────────────┐
 │ RF │ SVM │ XGBoost │ LGBM │ CatBoost │
-└──────────────────────────────────┘
+└──────────────────────────────────────┘
         │
         ▼
 Model Evaluation
@@ -182,33 +182,6 @@ Support / Confidence / Lift
 Drug–ADE Relationship Insights
 ```
 
-## Suggested Repository Structure
-
-```text
-drug-ade-pharmacovigilance/
-│
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_hybrid_ade_extraction.ipynb
-│   ├── 03_sentiment_analysis.ipynb
-│   ├── 04_machine_learning.ipynb
-│   └── 05_association_rule_mining.ipynb
-│
-├── data/
-│   └── README.md
-│
-├── models/
-├── results/
-│   ├── ml_results/
-│   ├── arm_results/
-│   └── visualizations/
-│
-├── app/
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
 ## Technologies
 
 - Python
@@ -218,6 +191,8 @@ drug-ade-pharmacovigilance/
 - Hugging Face Transformers
 - TF-IDF
 - XGBoost
+- SVM
+- Random Forest
 - LightGBM
 - CatBoost
 - mlxtend
@@ -251,10 +226,6 @@ Future work includes human-annotated validation, external dataset validation, im
 > **Research prototype only.** This project is not a medical diagnostic system and should not be used to provide medical advice or establish drug causality. Association-rule results represent patterns in the analyzed dataset and require clinical validation.
 
 ## Authors
-
-**Nanzeeba Ayman**  
+**Nanzeeba Ayman, Nadia Mahzabin, Umme Hafsa Mazumder**
 Department of Computer Science, Asian University for Women
 
-Contributors:
-- Nadia Mahzabin
-- Umme Hafsa Mazumder
