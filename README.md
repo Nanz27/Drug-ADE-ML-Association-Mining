@@ -1,16 +1,18 @@
 # Drug–ADE Insight Engine
 
-A modern research prototype for discovering potential **Adverse Drug Events (ADEs)** and **Drug–ADE associations** from patient-generated drug reviews.
+A conceptual web application prototype demonstrating a future pharmacovigilance system for discovering potential **Adverse Drug Events (ADEs)** and **Drug–ADE relationships** from patient-generated drug reviews.
 
-> **Research Prototype · Hybrid NLP · Sentiment Analysis · Machine Learning · Association Rule Mining**
+> **Conceptual Research Prototype · UI Demonstration · Pharmacovigilance**
 
 ---
 
 ## Overview
 
-The **Drug–ADE Insight Engine** demonstrates a conceptual end-to-end pharmacovigilance workflow that transforms unstructured patient drug reviews into structured Drug–ADE insights.
+The **Drug–ADE Insight Engine** is a one-page web application designed to demonstrate the proposed user experience and analytical workflow of our research project.
 
-The system combines transformer-based NLP, rule-based processing, sentiment analysis, machine learning, and association rule mining:
+The webpage does **not implement the complete NLP, machine-learning, or association-rule-mining pipeline**. Instead, it provides a visual and interactive demonstration of how these components could be integrated into a future end-to-end system.
+
+The proposed workflow is:
 
 ```text
 Patient Drug Review
@@ -25,42 +27,48 @@ Feature Engineering
         ↓
 SVM Prediction
         ↓
-Drug–ADE Association Mining
+Association Rule Mining
         ↓
-Interpretable Drug–ADE Insights
+Drug–ADE Relationship Insights
 ```
 
-The application is designed as an **academic research prototype** demonstrating how patient-generated medication reviews could be analyzed to support pharmacovigilance research.
+The models and methods shown in the interface are based on the methodology developed in the accompanying research project.
 
 ---
 
-## Key Features
+## Purpose of the Prototype
+
+The purpose of this webpage is to:
+
+* Demonstrate the proposed Drug–ADE analysis workflow.
+* Provide an intuitive interface for entering patient reviews.
+* Illustrate how NLP-derived information could be presented to users.
+* Demonstrate how machine-learning predictions could appear in a future system.
+* Visualize potential Drug–ADE relationships obtained through association rule mining.
+* Provide a proof-of-concept interface for future backend integration.
+
+**The current webpage is a demonstration interface rather than a fully deployed analytical system.**
+
+---
+
+## Demonstrated Workflow
 
 ### 1. Patient Review Input
 
-Users can provide:
+The user provides:
 
 * **Drug Name**
 * **Patient Review**
 
-The interface also provides a **Try Example** option for quickly demonstrating the system.
+A sample review can also be loaded using the **Try Example** option.
 
 ---
 
-### 2. Hybrid Drug–ADE Extraction
+### 2. Hybrid Drug–ADE Analysis
 
-The Drug–ADE extraction stage combines a transformer-based model with rule-based NLP processing.
+The prototype presents the concept of a hybrid NLP pipeline combining:
 
-The transformer component uses:
-
-**SpanBERT-large fine-tuned on ADE Corpus v2**
-
-Model:
-
-`abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2`
-
-The extracted entities are further processed using rule-based techniques including:
-
+* Transformer-based Drug–ADE extraction
 * ADE normalization
 * Negation detection
 * Severity detection
@@ -68,57 +76,123 @@ The extracted entities are further processed using rule-based techniques includi
 * Confidence aggregation
 * Silver-label generation
 
-This produces structured Drug–ADE information from unstructured patient reviews.
+The actual research pipeline uses **SpanBERT-based Drug–ADE extraction combined with rule-based NLP processing**.
+
+The webpage only demonstrates how the resulting information could be presented in a future application.
 
 ---
 
 ### 3. Context-Aware Sentiment Analysis
 
-The system uses **Twitter-RoBERTa** for sentiment analysis.
+The research methodology incorporates **Twitter-RoBERTa** for sentiment analysis.
 
-Model:
+**Model used in the research:**
 
 `cardiffnlp/twitter-roberta-base-sentiment-latest`
 
-The model classifies the patient review into:
+The prototype demonstrates the presentation of:
 
-* Positive
-* Neutral
-* Negative
+* Sentiment
+* Sentiment score
 
-and provides a corresponding sentiment score.
-
-The sentiment information is incorporated into the downstream feature representation.
+The webpage itself does not run the transformer model.
 
 ---
 
-### 4. SVM-Based ADE Prediction
+### 4. Machine Learning Prediction
 
-The machine-learning stage uses a **Support Vector Machine (SVM)** classifier to predict whether a review is **ADE-related**.
+The research workflow uses a **Support Vector Machine (SVM)** as the machine-learning classifier.
 
-The prediction features combine information generated throughout the NLP pipeline:
+The proposed feature representation combines:
 
 ```text
 TF-IDF Features
-       +
-Hybrid Drug–ADE Features
-       +
+        +
+Drug–ADE Features
+        +
 Sentiment Features
-       ↓
-    SVM Model
-       ↓
-ADE Prediction + Confidence
+        ↓
+      SVM
+        ↓
+ADE-related Prediction
 ```
 
-The web interface displays the predicted ADE-related status together with the model confidence.
+The webpage demonstrates how an SVM prediction and confidence value could be displayed to a user.
+
+**The trained SVM model is not executed directly by the current frontend.**
 
 ---
 
-### 5. Drug–ADE Association Rule Mining
+### 5. Drug–ADE Relationship Insights
 
-Following the prediction stage, the system identifies recurring Drug–ADE relationships using **Association Rule Mining (ARM)**.
+The research project also incorporates **Association Rule Mining (ARM)** to identify recurring patterns between drugs and ADEs.
 
-The resulting rules can contain:
+The prototype demonstrates how potential rules could be presented using measures such as:
+
+* Support
+* Confidence
+* Lift
+
+These visualized relationships are intended to demonstrate the concept of the future system rather than provide live, dynamically generated association rules.
+
+> Association rules represent patterns in the analyzed data and do not establish causal relationships between drugs and adverse events.
+
+---
+
+## Research Models Referenced
+
+The prototype is based on the following research methodology:
+
+| Component             | Model / Method              | Role                                         |
+| --------------------- | --------------------------- | -------------------------------------------- |
+| Drug–ADE Extraction   | SpanBERT-ADE                | Drug and ADE extraction                      |
+| Rule-Based Processing | Custom dictionaries & rules | Normalization, negation, severity, frequency |
+| Sentiment Analysis    | Twitter-RoBERTa             | Sentiment classification                     |
+| Machine Learning      | SVM                         | ADE-related prediction                       |
+| Association Mining    | ARM                         | Drug–ADE relationship discovery              |
+
+These components represent the **research methodology behind the prototype** and are not all directly executed within the webpage.
+
+---
+
+## Interface Sections
+
+The one-page application demonstrates the following sections:
+
+### Analyze a Patient Review
+
+Input interface for:
+
+* Drug name
+* Patient review
+* Example review
+* Analyze Review action
+
+### Review Analysis
+
+Conceptual display of:
+
+* Detected ADEs
+* ADE count
+* Severity
+* Frequency
+* Sentiment
+* Confidence
+
+### Hybrid NLP Analysis
+
+Visual explanation of the proposed NLP workflow.
+
+### ADE Prediction
+
+Conceptual display of:
+
+* SVM prediction
+* Prediction confidence
+
+### Drug–ADE Relationship Insights
+
+Demonstration of potential association-rule results containing:
 
 * Drug
 * ADE
@@ -126,75 +200,46 @@ The resulting rules can contain:
 * Confidence
 * Lift
 
-These measures help identify frequently occurring Drug–ADE patterns within the patient review dataset.
+### Research Pipeline
 
-> Association rules represent statistical patterns in the observed review data and do not establish a causal relationship between a drug and an adverse event.
+A visual summary of the complete proposed workflow.
 
 ---
 
-## Hybrid NLP Pipeline
-
-The core Drug–ADE processing workflow is:
+## Prototype Architecture
 
 ```text
-Patient Review
-      ↓
-Text Preprocessing
-      ↓
-SpanBERT-ADE
-      ↓
-Drug & ADE Entity Extraction
-      ↓
-Rule-Based NLP Processing
-      ├── ADE Normalization
-      ├── Negation Detection
-      ├── Severity Detection
-      ├── Frequency Detection
-      └── Confidence Aggregation
-      ↓
-Structured Drug–ADE Features
-      ↓
-Silver Label
+                    WEB APPLICATION
+                          │
+                          ▼
+                Patient Review Input
+                          │
+                          ▼
+                 Demonstration Layer
+                          │
+        ┌─────────────────┼─────────────────┐
+        │                 │                 │
+        ▼                 ▼                 ▼
+   Hybrid NLP        Sentiment          SVM Prediction
+   Analysis          Analysis           Demonstration
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          ▼
+                Drug–ADE Insights
+                          │
+                          ▼
+             Association Mining Concept
 ```
 
-The resulting features form the basis for subsequent sentiment analysis and machine-learning stages.
+The interface is intentionally designed as a **frontend demonstration layer** for the proposed research architecture.
 
 ---
 
-## Feature Engineering
+## Data
 
-The final feature representation combines multiple sources of information:
+The underlying research uses the **UCI Drug Review Dataset** containing patient-generated medication reviews.
 
-### Original Review Features
-
-* Drug name
-* Condition
-* Review text
-* Rating
-* Date
-* Useful count
-
-### Drug–ADE Features
-
-* ADE entities
-* ADE count
-* Silver label
-* Maximum confidence
-* Maximum severity
-* Maximum frequency
-
-### Sentiment Features
-
-* Sentiment
-* Sentiment score
-
-These features are combined to construct the input representation for the machine-learning stage.
-
----
-
-## Final Enhanced Dataset
-
-The original UCI Drug Review dataset contains:
+The original dataset contains:
 
 ```text
 uniqueID
@@ -206,18 +251,9 @@ date
 usefulCount
 ```
 
-The proposed pipeline enriches these original attributes with structured Drug–ADE and sentiment features.
-
-The final enhanced dataset contains:
+The research pipeline enriches the original data with Drug–ADE and sentiment-related features, including:
 
 ```text
-uniqueID
-drugName
-condition
-review
-rating
-date
-usefulCount
 ade_entities
 ade_count
 silver_label
@@ -228,205 +264,59 @@ sentiment
 sentiment_score
 ```
 
-This enhanced dataset is used for subsequent **machine-learning prediction and association rule mining**.
-
-Due to the large size of the processed dataset, the complete dataset is not included directly in this web application repository.
+The complete datasets are not included in this webpage repository because of their large file size.
 
 ---
 
-## Research Workflow
+## Important Limitation
+
+This application should be understood as a **conceptual proof-of-concept**, not a fully operational pharmacovigilance engine.
+
+The webpage currently demonstrates the **idea, workflow, and intended user experience** rather than executing the complete research pipeline in real time.
+
+In particular, the frontend does not independently perform:
+
+* Transformer-based ADE extraction
+* Rule-based NLP processing
+* Real-time sentiment inference
+* SVM model inference
+* Live association-rule mining
+
+These components represent the analytical methods proposed and implemented separately as part of the research work.
+
+---
+
+## Future Development
+
+The prototype can be extended into a complete end-to-end application by connecting the interface to the actual research pipeline through a backend API.
+
+A future implementation could:
 
 ```text
-                 PATIENT REVIEW
-                       │
-                       ▼
-             ┌──────────────────┐
-             │  Hybrid NLP      │
-             │  Drug–ADE        │
-             │  Extraction      │
-             └────────┬─────────┘
-                      │
-                      ▼
-             Drug–ADE Features
-                      │
-          ┌───────────┴───────────┐
-          ▼                       ▼
-   Sentiment Analysis       Silver Label
-   Twitter-RoBERTa               │
-          │                      │
-          └──────────┬───────────┘
-                     ▼
-              Feature Engineering
-                     │
-                     ▼
-                   SVM
-                     │
-                     ▼
-              ADE Prediction
-                     │
-                     ▼
-          Association Rule Mining
-                     │
-                     ▼
-           Drug–ADE Relationships
+Web Interface
+      ↓
+Backend API
+      ↓
+Hybrid NLP Pipeline
+      ↓
+Twitter-RoBERTa
+      ↓
+Feature Engineering
+      ↓
+Trained SVM
+      ↓
+Association Rule Mining
+      ↓
+Live Results
 ```
 
----
-
-## Web Application
-
-The webpage provides an interactive interface for demonstrating the research workflow.
-
-The main sections include:
-
-1. **Research Prototype Introduction**
-2. **Patient Review Input**
-3. **Review Analysis**
-4. **Hybrid NLP Analysis**
-5. **ADE Prediction**
-6. **Drug–ADE Relationship Insights**
-7. **Analysis Summary**
-8. **Research Pipeline**
-9. **Research Disclaimer**
-
-The interface is designed with a clean academic health-tech aesthetic to make the analytical results understandable to both technical and non-technical audiences.
+This would allow patient reviews entered through the webpage to be processed by the actual trained models and return dynamically generated results.
 
 ---
 
-## Prototype Mode
+## Research Disclaimer
 
-The current webpage serves as a **research demonstration interface**.
-
-Users can:
-
-1. Enter a drug name.
-2. Enter a patient review.
-3. Analyze the review.
-4. View extracted ADE information.
-5. View sentiment results.
-6. View the SVM-based ADE prediction.
-7. Explore Drug–ADE relationship insights.
-
-The interface is structured so that the frontend can later be connected directly to the complete NLP and machine-learning backend.
-
----
-
-## Technologies & Models
-
-### Natural Language Processing
-
-* Python
-* Transformer-based NLP
-* Rule-based NLP
-* SpanBERT
-
-### Drug–ADE Extraction
-
-**Model:** `abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2`
-
-Purpose:
-
-> Drug and ADE entity/span extraction from patient reviews.
-
-### Sentiment Analysis
-
-**Model:** `cardiffnlp/twitter-roberta-base-sentiment-latest`
-
-Purpose:
-
-> Context-aware sentiment classification of patient reviews.
-
-### Machine Learning
-
-**Model:** Support Vector Machine (SVM)
-
-Purpose:
-
-> Predict whether a patient review is ADE-related.
-
-### Feature Engineering
-
-* TF-IDF
-* Drug–ADE features
-* Sentiment features
-* Review metadata
-
-### Association Rule Mining
-
-The system is designed to identify recurring Drug–ADE relationships using association-rule-mining techniques such as:
-
-* Apriori
-* FP-Growth
-
----
-
-## Project Structure
-
-```text
-Drug-ADE-Insight-Engine/
-│
-├── website/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── notebooks/
-│
-├── src/
-│   ├── preprocessing/
-│   ├── ade_extraction/
-│   ├── sentiment/
-│   ├── feature_engineering/
-│   ├── machine_learning/
-│   └── association_mining/
-│
-├── data/
-│   ├── README.md
-│   └── dictionaries/
-│       ├── ade_lexicon.json
-│       ├── normalization_mapping.json
-│       ├── negation_words.json
-│       ├── severity_terms.json
-│       └── frequency_terms.json
-│
-├── results/
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
-## Research Purpose
-
-The purpose of the **Drug–ADE Insight Engine** is to demonstrate how patient-generated medication reviews can be transformed into structured pharmacovigilance information using a combination of:
-
-**Hybrid NLP + Sentiment Analysis + Feature Engineering + SVM + Association Rule Mining**
-
-The prototype demonstrates a potential future workflow for discovering and analyzing Drug–ADE patterns from large-scale patient-generated review data.
-
----
-
-## Limitations
-
-This system is a **research prototype** and should not be considered a clinical decision-support system.
-
-The predictions and extracted ADEs:
-
-* Do not establish medical causality.
-* Do not constitute a medical diagnosis.
-* Do not replace professional medical judgment.
-* Represent patterns identified from patient-generated review data.
-
-Similarly, association rules identify statistical relationships in the analyzed data but **do not prove that a drug caused an adverse event**.
-
----
-
-## Disclaimer
-
-> **Drug–ADE Insight Engine is a research prototype based on patient-generated drug reviews. Detected ADEs, predictions, sentiments, and association rules represent patterns identified from the available data and should not be interpreted as confirmed medical causality, diagnosis, or medical advice.**
+**Drug–ADE Insight Engine is a conceptual research prototype. The information presented by the interface is intended to demonstrate a proposed pharmacovigilance workflow and should not be interpreted as confirmed adverse drug events, medical diagnoses, causal relationships, or medical advice.**
 
 ---
 
@@ -436,13 +326,6 @@ Similarly, association rules identify statistical relationships in the analyzed 
 Department of Computer Science, Asian University for Women
 
 ---
-
-## Project Status
-
-**Research Prototype**
-
-The web application demonstrates the proposed end-to-end Drug–ADE analysis workflow and provides an interactive interface for presenting the research findings.
-
 
 This project was built with [Lovable](https://lovable.dev).
 
