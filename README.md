@@ -18,8 +18,7 @@ The project combines transformer-based information extraction, rule-based NLP pr
 
 **RQ2:** How can sentiment-aware analysis and structured relationship construction improve the performance of machine learning models in detecting and structuring adverse drug event information?
 
-**RQ3:** How can machine learning, association rule mining, and pattern analysis techniques uncover hidden relationships between drugs and side effects in patient review data?
-
+**RQ3:** How can association rule mining and pattern analysis techniques uncover meaningful relationships between drugs and adverse side effects in patient review data?
 ## Key Contributions
 
 - Developed a **hybrid NLP pipeline** combining transformer-based ADE extraction with rule-based post-processing.
