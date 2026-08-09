@@ -1,0 +1,936 @@
+## Gastrointestinal
+nausea
+vomiting
+diarrhea
+constipation
+abdominal pain
+abdominal cramping
+dyspepsia
+bloating
+flatulence
+heartburn
+gastroesophageal reflux
+gastritis
+gastrointestinal bleeding
+melena
+hematemesis
+hematochezia
+peptic ulcer
+stomach upset
+loss of appetite
+increased appetite
+dry mouth
+excessive salivation
+dysphagia
+abdominal distension
+indigestion
+stomach cramps
+rectal bleeding
+anal irritation
+fecal incontinence
+tenesmus
+gastroenteritis
+pancreatitis
+esophagitis
+mouth ulcers
+glossitis
+stomatitis
+taste disturbance
+metallic taste
+weight loss
+weight gain
+early satiety
+gastric perforation
+colitis
+irritable bowel symptoms
+black stools
+clay-colored stools
+hiccups
+belching
+
+## Cardiovascular
+tachycardia
+bradycardia
+palpitations
+hypertension
+hypotension
+orthostatic hypotension
+chest pain
+chest tightness
+arrhythmia
+atrial fibrillation
+peripheral edema
+flushing
+syncope
+presyncope
+myocardial infarction
+angina
+QT prolongation
+heart palpitations
+cardiac arrest
+congestive heart failure
+deep vein thrombosis
+phlebitis
+vasculitis
+cold extremities
+varicose veins worsening
+edema of extremities
+pulmonary embolism
+stroke
+transient ischemic attack
+cardiomyopathy
+bundle branch block
+heart murmur
+pericarditis
+hot flashes
+cyanosis
+
+## Neurological
+headache
+migraine
+dizziness
+vertigo
+drowsiness
+somnolence
+insomnia
+tremor
+seizure
+paresthesia
+numbness
+tingling sensation
+ataxia
+confusion
+memory impairment
+cognitive impairment
+brain fog
+peripheral neuropathy
+restless legs syndrome
+balance problems
+lightheadedness
+fainting
+muscle twitching
+involuntary movements
+speech disturbance
+slurred speech
+loss of coordination
+hyperreflexia
+hyporeflexia
+nerve pain
+burning sensation
+electric shock sensation
+cognitive slowing
+difficulty concentrating
+word-finding difficulty
+disorientation
+syncopal episode
+migraine with aura
+photophobia
+phonophobia
+akathisia
+dystonia
+dyskinesia
+parkinsonism
+serotonin syndrome
+encephalopathy
+
+## Psychiatric
+anxiety
+depression
+irritability
+mood swings
+agitation
+panic attacks
+suicidal ideation
+hallucinations
+paranoia
+emotional blunting
+apathy
+nervousness
+restlessness
+aggression
+mania
+hypomania
+psychosis
+nightmares
+vivid dreams
+sleep disturbance
+hypersomnia
+dependence
+withdrawal symptoms
+tolerance
+euphoria
+dysphoria
+emotional lability
+crying spells
+social withdrawal
+obsessive thoughts
+compulsive behavior
+personality change
+apathetic mood
+disinhibition
+cognitive dulling
+
+## Dermatologic
+rash
+itching
+pruritus
+hives
+urticaria
+dry skin
+skin discoloration
+photosensitivity
+acne
+hair loss
+alopecia
+excessive sweating
+night sweats
+skin rash with blistering
+Stevens-Johnson syndrome
+toxic epidermal necrolysis
+contact dermatitis
+eczema flare
+skin peeling
+bruising
+petechiae
+purpura
+hyperpigmentation
+hypopigmentation
+erythema
+skin thickening
+nail changes
+nail discoloration
+hirsutism
+angioedema
+swelling of lips
+swelling of face
+swelling of tongue
+injection site rash
+cold sweats
+clammy skin
+skin ulceration
+psoriasis flare
+hair thinning
+scalp irritation
+
+## Respiratory
+shortness of breath
+dyspnea
+cough
+wheezing
+nasal congestion
+sinusitis
+sore throat
+bronchitis
+pneumonia
+respiratory depression
+chest congestion
+hoarseness
+throat irritation
+nosebleed
+epistaxis
+pharyngitis
+upper respiratory infection
+hypoxia
+hyperventilation
+pleural effusion
+pulmonary fibrosis
+asthma exacerbation
+apnea
+labored breathing
+rapid breathing
+difficulty breathing at night
+throat tightness
+sneezing
+runny nose
+postnasal drip
+interstitial lung disease
+respiratory arrest
+
+## Musculoskeletal
+muscle pain
+myalgia
+joint pain
+arthralgia
+back pain
+muscle weakness
+muscle cramps
+muscle spasms
+stiffness
+joint swelling
+muscle stiffness
+rhabdomyolysis
+bone pain
+tendonitis
+osteoporosis
+fracture risk
+leg cramps
+neck pain
+shoulder pain
+hip pain
+knee pain
+reduced grip strength
+gait disturbance
+muscle atrophy
+limb pain
+jaw pain
+joint stiffness
+muscle tightness
+costochondritis
+
+## Renal/Urinary
+kidney pain
+urinary frequency
+urinary urgency
+dysuria
+hematuria
+urinary retention
+incontinence
+nocturia
+kidney stones
+acute kidney injury
+elevated creatinine
+proteinuria
+oliguria
+polyuria
+urinary tract infection
+flank pain
+interstitial nephritis
+renal failure
+fluid retention
+electrolyte imbalance
+cloudy urine
+dark urine
+foamy urine
+difficulty urinating
+
+## Hepatic
+elevated liver enzymes
+jaundice
+hepatitis
+liver damage
+fatty liver
+liver failure
+abdominal tenderness right upper quadrant
+hepatomegaly
+dark urine with jaundice
+yellowing of skin
+yellowing of eyes
+cholestasis
+hepatotoxicity
+elevated bilirubin
+liver function abnormality
+
+## Hematologic
+anemia
+thrombocytopenia
+leukopenia
+neutropenia
+easy bruising
+prolonged bleeding
+blood clots
+low white blood cell count
+low platelet count
+low red blood cell count
+agranulocytosis
+eosinophilia
+lymphadenopathy
+pancytopenia
+hemolysis
+iron deficiency
+vitamin B12 deficiency
+folate deficiency
+coagulopathy
+elevated INR
+bleeding gums
+nosebleeds recurrent
+petechial rash
+
+## Endocrine/Metabolic
+hyperglycemia
+hypoglycemia
+thyroid dysfunction
+hypothyroidism
+hyperthyroidism
+metabolic acidosis
+electrolyte disturbance
+hyperkalemia
+hypokalemia
+hyponatremia
+hypernatremia
+hypercalcemia
+hypocalcemia
+dehydration
+fluid overload
+adrenal insufficiency
+cortisol suppression
+insulin resistance
+elevated triglycerides
+elevated cholesterol
+gout flare
+hot flushes
+cold intolerance
+heat intolerance
+excessive thirst
+increased urination
+goiter
+
+## Ocular
+blurred vision
+dry eyes
+eye pain
+visual disturbance
+double vision
+eye irritation
+conjunctivitis
+cataract
+increased intraocular pressure
+glaucoma
+vision loss
+eye redness
+watery eyes
+light sensitivity
+difficulty focusing
+floaters
+night vision problems
+eyelid twitching
+eye swelling
+
+## Otic
+tinnitus
+hearing loss
+ear pain
+ear ringing
+ear fullness
+hearing impairment
+balance disturbance
+ear infection
+dizziness with hearing changes
+
+## Reproductive
+erectile dysfunction
+decreased libido
+increased libido
+menstrual irregularities
+breast tenderness
+breast enlargement
+galactorrhea
+vaginal dryness
+vaginal bleeding
+amenorrhea
+dysmenorrhea
+testicular pain
+gynecomastia
+infertility concerns
+delayed ejaculation
+priapism
+pelvic pain
+spotting between periods
+heavy menstrual bleeding
+postmenopausal bleeding
+
+## General/Constitutional
+fatigue
+malaise
+fever
+chills
+lethargy
+weakness
+flu-like symptoms
+general discomfort
+body aches
+loss of energy
+exhaustion
+feeling unwell
+low energy
+sluggishness
+reduced stamina
+generalized pain
+irritability physical
+fatigue on exertion
+
+## Immunologic/Allergic
+allergic reaction
+anaphylaxis
+hypersensitivity reaction
+facial swelling
+throat swelling
+difficulty breathing due to swelling
+hives generalized
+autoimmune reaction
+drug fever
+serum sickness
+anaphylactic shock
+allergic rhinitis
+cross-reactivity reaction
+immune-mediated rash
+
+## Injection/Application Site
+injection site pain
+injection site redness
+injection site swelling
+injection site bruising
+injection site itching
+injection site nodule
+application site irritation
+application site burning
+infusion reaction
+infusion site phlebitis
+patch site irritation
+injection site infection
+
+## Withdrawal/Dependence
+physical dependence
+rebound symptoms
+discontinuation syndrome
+drug tolerance
+drug craving
+rebound insomnia
+rebound anxiety
+withdrawal tremor
+withdrawal seizures
+dependency
+addiction risk
+
+## Oral/Dental
+gum bleeding
+tooth discoloration
+mouth sores
+altered taste
+difficulty swallowing
+jaw clenching
+teeth grinding
+oral thrush
+gum swelling
+bad breath
+tongue swelling
+
+## Sleep
+restless sleep
+early morning awakening
+difficulty falling asleep
+excessive daytime sleepiness
+sleep paralysis
+sleepwalking
+
+## Metabolic Labs/Other
+elevated blood glucose
+abnormal lipid panel
+elevated creatine kinase
+low sodium
+low potassium
+high potassium
+abnormal thyroid panel
+elevated amylase
+elevated lipase
+low magnesium
+low phosphate
+elevated uric acid
+elevated white blood cell count
+elevated C-reactive protein
+abnormal complete blood count
+elevated troponin
+abnormal coagulation panel
+elevated ammonia
+low albumin
+elevated ferritin
+
+## Gastrointestinal Additional
+acute pancreatitis
+chronic diarrhea
+abdominal rigidity
+abdominal guarding
+intestinal obstruction
+bowel perforation
+gastric ulcer
+duodenal ulcer
+esophageal ulcer
+gastroparesis
+fecal urgency
+bloody diarrhea
+mucus in stool
+anal fissure
+hemorrhoids worsening
+oral candidiasis
+dry retching
+projectile vomiting
+abdominal bloating after meals
+early fullness
+food intolerance
+lactose intolerance onset
+reflux at night
+sour stomach
+burping with regurgitation
+excessive gas
+stomach gurgling
+cramping after eating
+loss of taste
+enhanced sense of smell
+bitter taste in mouth
+tongue discoloration
+
+## Cardiovascular Additional
+ventricular tachycardia
+supraventricular tachycardia
+premature ventricular contractions
+heart block
+sinus arrhythmia
+postural tachycardia
+claudication
+peripheral cyanosis
+jugular vein distension
+cardiac murmur new onset
+exercise intolerance
+orthopnea
+paroxysmal nocturnal dyspnea
+raynaud phenomenon
+varicose vein pain
+superficial thrombophlebitis
+aortic aneurysm risk
+cardiac chest tightness on exertion
+blood pressure fluctuation
+rebound hypertension
+dizziness on standing
+cold sweats with chest discomfort
+irregular pulse
+pulse rate elevated at rest
+capillary fragility
+skin mottling
+
+## Neurological Additional
+absence seizure
+tonic-clonic seizure
+status epilepticus
+myoclonus
+chorea
+tics
+hand tremor at rest
+intention tremor
+cerebellar dysfunction
+peripheral sensory loss
+hyperesthesia
+hypoesthesia
+allodynia
+causalgia
+foot drop
+facial droop
+bell's palsy
+optic neuritis
+meningismus
+increased intracranial pressure symptoms
+cognitive fatigue
+executive dysfunction
+short-term memory loss
+long-term memory loss
+difficulty planning tasks
+delayed reaction time
+apraxia
+aphasia
+dysarthria
+reduced alertness
+hypervigilance
+sensory overload
+tunnel vision episode
+déjà vu episodes
+micrographia
+bradykinesia
+rigidity of limbs
+postural instability
+nocturnal leg jerks
+hypnic jerks
+
+## Psychiatric Additional
+generalized anxiety symptoms
+social anxiety symptoms
+obsessive-compulsive symptoms
+intrusive thoughts
+derealization
+depersonalization
+emotional flatness
+anhedonia
+loss of motivation
+impulsivity
+risk-taking behavior increase
+grandiosity
+racing thoughts
+pressured speech
+flight of ideas
+catatonia
+delusions
+auditory hallucinations
+visual hallucinations
+tactile hallucinations
+paranoid ideation
+persecutory thoughts
+apathy syndrome
+emotional dependence on medication
+rebound depression
+irritable mood on withdrawal
+panic disorder onset
+health anxiety increase
+hypervigilant behavior
+sleep-related eating behavior
+complex sleep behavior
+somnambulism episodes
+
+## Dermatologic Additional
+fixed drug eruption
+erythema multiforme
+exfoliative dermatitis
+drug reaction with eosinophilia and systemic symptoms
+lichenoid eruption
+vesicular rash
+pustular rash
+maculopapular rash
+morbilliform rash
+skin necrosis
+injection-related skin necrosis
+cutaneous vasculitis
+livedo reticularis
+onycholysis
+koilonychia
+clubbing of nails
+telogen effluvium
+hypertrichosis
+seborrheic dermatitis flare
+rosacea flare
+perioral dermatitis
+cheilitis
+xerosis
+pressure sores
+delayed wound healing
+keloid formation
+subcutaneous nodules
+panniculitis
+skin atrophy
+striae formation
+
+## Respiratory Additional
+pleuritic chest pain
+productive cough
+dry cough
+hemoptysis
+stridor
+bronchospasm
+laryngospasm
+chronic obstructive pulmonary disease exacerbation
+pulmonary hypertension
+interstitial pneumonitis
+aspiration pneumonia
+chronic sinus congestion
+allergic rhinitis worsening
+postnasal drip cough
+vocal cord dysfunction
+reduced lung capacity
+exercise-induced bronchospasm
+nocturnal cough
+sleep apnea worsening
+respiratory alkalosis
+tachypnea
+
+## Musculoskeletal Additional
+polymyalgia
+fibromyalgia-like symptoms
+tendon rupture
+achilles tendon pain
+rotator cuff pain
+carpal tunnel symptoms
+trigger finger
+plantar fasciitis
+osteonecrosis
+bone density loss
+spinal pain
+sciatica
+muscle fasciculations
+delayed onset muscle soreness
+exercise intolerance musculoskeletal
+reduced range of motion
+joint locking
+joint instability
+crepitus
+generalized weakness on exertion
+difficulty climbing stairs
+difficulty rising from chair
+
+## Renal/Urinary Additional
+nephrotic syndrome
+glomerulonephritis
+renal tubular acidosis
+crystalluria
+bladder spasms
+urinary hesitancy
+weak urine stream
+urinary stream interruption
+pelvic pressure with urination
+bladder pain
+interstitial cystitis symptoms
+recurrent urinary tract infections
+kidney function decline over time
+elevated blood urea nitrogen
+metabolic alkalosis renal
+fluid shifts
+excess thirst with dehydration
+reduced urine output
+urine odor change
+
+## Hepatic Additional
+drug-induced liver injury
+autoimmune hepatitis
+liver cirrhosis progression
+portal hypertension
+ascites
+hepatic encephalopathy
+spider angiomas
+palmar erythema
+right upper quadrant tenderness
+liver biopsy abnormality
+transaminitis
+gamma-glutamyl transferase elevation
+alkaline phosphatase elevation
+
+## Hematologic Additional
+aplastic anemia
+hemolytic anemia
+megaloblastic anemia
+disseminated intravascular coagulation
+heparin-induced thrombocytopenia
+splenomegaly
+bone marrow suppression
+reduced hemoglobin
+reduced hematocrit
+elevated reticulocyte count
+blood transfusion requirement
+spontaneous bruising
+gum bleeding excessive
+prolonged bleeding after minor cuts
+clotting abnormality
+
+## Endocrine/Metabolic Additional
+diabetic ketoacidosis
+hyperosmolar hyperglycemic state
+adrenal crisis
+cushingoid features
+addisonian symptoms
+osteomalacia
+rickets risk
+lipodystrophy
+insulin injection site lipohypertrophy
+metabolic syndrome worsening
+elevated fasting glucose
+impaired glucose tolerance
+polydipsia
+polyphagia
+weight fluctuation
+abnormal body fat redistribution
+secondary hyperparathyroidism
+
+## Ocular Additional
+macular degeneration progression
+retinal hemorrhage
+corneal opacity
+uveitis
+optic disc swelling
+color vision changes
+eye pressure spikes
+halos around lights
+difficulty with night driving
+excessive tearing
+eyelid drooping
+eyelid redness
+pupil dilation persistent
+pupil constriction persistent
+
+## Otic Additional
+sudden hearing loss
+conductive hearing loss
+sensorineural hearing loss
+ear discharge
+ear itching
+otitis media recurrence
+aural fullness with vertigo
+hyperacusis
+
+## Reproductive Additional
+ovarian cysts
+polycystic ovary symptoms worsening
+preterm labor risk
+fetal risk concerns
+lactation suppression
+nipple discharge
+scrotal swelling
+epididymitis symptoms
+cervical changes
+uterine cramping
+pelvic inflammatory symptoms
+low sperm count concern
+reduced fertility concern
+
+## General/Constitutional Additional
+generalized weakness
+reduced exercise tolerance
+unexplained weight change
+feeling of impending doom
+generalized swelling
+overall unwellness
+post-exertional malaise
+chronic fatigue syndrome-like symptoms
+heat sensitivity
+cold sensitivity
+generalized pruritus with fatigue
+recurrent low-grade fever
+
+## Immunologic/Allergic Additional
+drug-induced lupus
+cytokine release syndrome
+immune thrombocytopenia
+eosinophilic pneumonia
+delayed hypersensitivity reaction
+contact allergy reaction
+latex allergy reaction
+food-drug interaction reaction
+biologic infusion reaction
+immunogenicity reaction
+
+## Injection/Application Site Additional
+injection site induration
+injection site warmth
+injection site discoloration
+injection site scarring
+injection site abscess
+injection site necrosis
+transdermal patch adhesion reaction
+subcutaneous nodule at injection site
+lipoatrophy at injection site
+
+## Withdrawal/Dependence Additional
+protracted withdrawal syndrome
+post-acute withdrawal symptoms
+autonomic instability on withdrawal
+withdrawal-induced nausea
+withdrawal-induced sweating
+withdrawal-induced agitation
+psychological dependence
+behavioral dependence
+compulsive medication-seeking behavior
+
+## Oral/Dental Additional
+gingival hyperplasia
+dental caries increase
+enamel erosion
+oral lichen planus
+burning mouth syndrome
+excessive drooling
+reduced salivary flow
+halitosis persistent
+tongue ulceration
+lip swelling recurrent
+
+## Sleep Additional
+fragmented sleep
+reduced sleep quality
+circadian rhythm disruption
+delayed sleep onset
+frequent night waking
+daytime napping increase
+microsleep episodes
+reduced REM sleep
+sleep talking
