@@ -38,7 +38,8 @@ The project uses the **UCI Drug Review Dataset** ( https://huggingface.co/datase
 The pipeline combines:
 
 **Transformer-based ADE extraction**
-- A pretrained SpanBERT-based ADE model extracts adverse-event spans from reviews.
+Model = ["abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2"](https://huggingface.co/abhibisht89/spanbert-large-cased-finetuned-ade_corpus_v2?utm_source=chatgpt.com)
+- A pretrained SpanBERT-large model fine-tuned for token classification / span extraction, specifically to extract Adverse Drug Reactions (ADRs/ADEs) and drug mentions. The model card explicitly describes it as being fine-tuned for "Adverse drug reaction" and "Drug" span Extraction
 
 **Rule-based post-processing**
 - ADE normalization
@@ -59,10 +60,14 @@ The resulting structured information includes:
 - Silver label
 
 ### 3. Sentiment Analysis
+Model = ["cardiffnlp/twitter-roberta-base-sentiment-latest"](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest?utm_source=chatgpt.com)
+- It's a RoBERTa-base model trained on tweets and fine-tuned for sentiment analysis. The Cardiff NLP model provides three sentiment classes:
+1. Negative
+2. Neutral
+3. Positive
 
-Context-aware sentiment analysis produces:
-
-- Sentiment label
+Context-aware sentiment analysis pipeline produces:
+- Sentiment label (classes)
 - Sentiment score/confidence
 
 These features are added to the final ML feature set to investigate the contribution of sentiment-aware information.
