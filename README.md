@@ -26,13 +26,12 @@ The project combines transformer-based information extraction, rule-based NLP pr
 - Incorporated **ADE count, severity, frequency, confidence, and sentiment** into downstream analysis.
 - Compared five classical ML models across progressively richer feature sets.
 - Applied **Apriori and FP-Growth** to discover interpretable Drug→ADE association patterns.
-- Produced visual and statistical summaries for model evaluation and relationship discovery.
 
 ## Methodology
 
 ### 1. Data
 
-The project uses the **UCI Drug Review Dataset**, containing patient-generated medication reviews and associated metadata such as drug name, condition, rating, date, and useful count.
+The project uses the **UCI Drug Review Dataset** ( https://huggingface.co/datasets/dd-n-kk/uci-drug-review-cleaned ) containing patient-generated medication reviews and associated metadata such as drug name, condition, rating, date, and useful count.
 
 ### 2. Hybrid NLP Pipeline
 
