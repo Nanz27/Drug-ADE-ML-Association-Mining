@@ -14,7 +14,7 @@ The project combines transformer-based information extraction, rule-based NLP pr
 
 ## Research Questions
 
-**RQ1:** How accurately can drug entities and adverse drug events be extracted and identified from patient review text using NLP techniques?
+**RQ1:** How can adverse drug events be extracted and identified from patient review text using NLP techniques and named entity recognition?
 
 **RQ2:** How can sentiment-aware analysis and structured relationship construction improve the performance of machine learning models in detecting and structuring adverse drug event information?
 
